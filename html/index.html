@@ -41,9 +41,9 @@
             // Add a camera to the scene and attach it to the canvas
             var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, new BABYLON.Vector3(0, 0, 0), scene);
             camera.lowerRadiusLimit = 10;
-            camera.upperRadiusLimit = 100;
-            camera.upperBetaLimit = 3.14/3;
-            camera.panningAxis = new BABYLON.Vector3(5,0,5);
+           // camera.upperRadiusLimit = 100;
+            //camera.upperBetaLimit = 3.14/3;
+            //camera.panningAxis = new BABYLON.Vector3(5,0,5);
             camera.attachControl(canvas, true);
             
 
@@ -53,7 +53,7 @@
 
             // Asset Manager
             var assetsManager = new BABYLON.AssetsManager(scene);
-            assetsManager.addMeshTask("factory_tunnels_task", "", "../data/", "factory_tunnels.glb");
+            assetsManager.addMeshTask("factory_tunnels_task", "", "../data/", "factory.obj");
             assetsManager.load();
 
             
